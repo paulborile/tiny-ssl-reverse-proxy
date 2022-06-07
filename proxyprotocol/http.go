@@ -46,7 +46,7 @@ func BehindTCPProxyListenAndServe(srv *http.Server) error {
 	// Begin copied verbatim from net/http
 	addr := srv.Addr
 	if addr == "" {
-		addr = ":http"
+		addr = ":https"
 	}
 	ln, err := net.Listen("tcp", addr)
 	if err != nil {
